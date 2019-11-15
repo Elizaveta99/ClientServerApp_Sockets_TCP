@@ -8,10 +8,15 @@
     </Appenders>
 
     <Loggers>
-        <Logger name= "View.Main" level="info" additivity="false">
+        <Logger name= "Model.server.NetServerThread" level="all" additivity="false">
             <AppenderRef ref="Console"/>
         </Logger>
-        <Logger name= "Model.TextUnit" level="info" additivity="false">
+
+        <Logger name= "Model.client.NetClientThread" level="all" additivity="false">
+            <AppenderRef ref="Console"/>
+        </Logger>
+
+        <Logger name= "Model.server.ServerThread" level="all" additivity="false">
             <AppenderRef ref="Console"/>
         </Logger>
 
